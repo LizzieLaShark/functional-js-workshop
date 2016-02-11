@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Racer Game</title>
+  <link href="racergame.css" rel="stylesheet">
+  <link href="..\Skeleton-2.0.4\css\normalize.css" rel="stylesheet">
+  <script src="js/jQuery.js"></script>
+  <script src="racergame.js"></script>
+</head>
+
+<body>
+
+<table class="racer_table">
+  <tr id="player1_strip">
+    <td id="p1t1"></td>
+    <td id="p1t2"></td>
+    <td id="p1t3"></td>
+    <td id="p1t4"></td>
+  </tr>
+
+  <tr id="player2_strip">
+    <td id="p2t1"></td>
+    <td id="p2t2"></td>
+    <td id="p2t3"></td>
+    <td id="p2t4"></td>
+  </tr>
+
+</table>
+
+
+var updatePlayerPosition = function('player1') {
+	
+
+function modifyText() {
+  var t2 = document.getElementById("p1t2");
+  if (t2.firstChild.nodeValue == "three") {
+    t2.firstChild.nodeValue = "two";
+  } else {
+    t2.firstChild.nodeValue = "three";
+  }
+}
+
+// add event listener to table
+var event1 = document.getElementById("outside");
+event1.addEventListener("click", modifyText, false);
+
+}
+
+</html>
+
