@@ -188,21 +188,6 @@ e number of times each string occured in the array. Return the object directly (
 no need to console.log).
 
 
-
-
-var wordsReduce = countWords.reduce(function ()) {
-	
-
-}
-
-
-   function countWords(inputWords) {
-     
-   }
-
-if inputWords[] === 'apple'
-
-
 var inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian'];
 
 
@@ -221,8 +206,6 @@ var countingFunction = function(countSoFar, currentValue){
 
 	 return countSoFar;
 }
-
-
 	
 var finalCounts = inputWords.reduce(countingFunction, { apple: 0, banana: 0, durian: 0} );
 console.log(finalCounts);
